@@ -1,0 +1,36 @@
+<div style={styles.dropdownContent}>
+            <label>
+              <input
+                type="checkbox"
+                name="Categories"
+                checked={tableCol?.Categories}
+                onChange={handleCheckboxChange}
+              />
+              Categories
+            </label>
+          </div>
+
+          <div style={styles.dropdownContent}>
+            <label>
+              <input
+                type="checkbox"
+                name="Status"
+                checked={tableCol?.Status}
+                onChange={handleCheckboxChange}
+              />
+              Status
+            </label>
+          </div>
+
+          <div style={styles.dropdownContent}>
+            <label>
+              <input
+                type="checkbox"
+                name="Action"
+                checked={tableCol?.Action} // Reflect current state
+                onChange={handleCheckboxChange} // Call function to update state
+              />
+              Action
+            </label>
+            {/* Include other menu items */}
+           </div>
